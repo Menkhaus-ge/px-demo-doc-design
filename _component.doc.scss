@@ -1,475 +1,200 @@
+
 ////
-/// PX-DEMO-PAGE-DESIGN
-/// Defines simple button objects
-/// @group px-demo-page-design
+/// PX-DOC-DESIGN
+/// Defines styles for component documention pages.
+/// @group px-doc-design
 ////
 
-@import "px-defaults-design/_settings.defaults.scss";
+
+//Settings
 @import "px-colors-design/_settings.colors.scss";
-@import "px-iconography-design/_base.iconography.scss";
 
-/// Prepend value for all generated classes
-/// @group px-buttons-design:variables:style
-/// @type String [default]
-$inuit-btn-namespace                                : $inuit-namespace !default;
+// Generic
+@import "px-normalize-design/_generic.normalize.scss";
+@import "px-box-sizing-design/_generic.box-sizing.scss";
+@import "px-helpers-design/_generic.helpers.scss";
 
-/// Font color
-/// @group px-buttons-design:variables:style
-/// @type Color [default]
-$inuit-btn-color                                    : $black !default;
+// Base
+@import "px-flexbox-design/_base.flexbox.scss";
+@import "px-viewport-design/_base.viewport.scss";
+@import "px-typography-design/_base.typography.scss";
+@import "px-headings-design/_base.headings.scss";
 
-/// Background color
-/// @group px-buttons-design:variables:style
-/// @type Color [default]
-$inuit-btn-background                               : $gray3 !default;
+$inuit-enable-code--inline : true;
+@import "px-code-design/_base.code.scss";
 
-/// Hover background color
-/// @group px-buttons-design:variables:style
-/// @type Color [default]
-$inuit-btn-background--hover                        : $gray5 !default;
+// Objects
+$actionable : true;
+@import "px-actionable-text-icons-design/_objects.actionable.scss";
 
-/// Pressed background color
-/// @group px-buttons-design:variables:style
-/// @type Color [default]
-$inuit-btn-background--pressed                      : $gray6 !default;
+$inuit-enable-toggle--small : true;
+@import "px-toggle-design/_objects.toggle.scss";
 
-/// Border color
-/// @group px-buttons-design:variables:style
-/// @type Color [default]
-$inuit-btn-border-color                             : $gray5 !default;
+$inuit-enable-inline-fields : true;
+$inuit-enable-input--regular : true;
+@import "px-forms-design/_base.forms.scss";
 
-/// Hover border color
-/// @group px-buttons-design:variables:style
-/// @type Color [default]
-$inuit-btn-border-color--hover                      : $gray6 !default;
+$inuit-enable-list-inline--delimited : true;
+@import "px-list-inline-design/_objects.list-inline.scss";
 
-/// Pressed border color
-/// @group px-buttons-design:variables:style
-/// @type Color [default]
-$inuit-btn-border-color--pressed                    : $gray7 !default;
+// Component
+//.mega-demo
+.doc-demo-background{
+  background: var(--px-demo-interactive-background-color, $gray1);
+  width: 100%;
+}
 
-/// Shadow
-/// @group px-buttons-design:variables:style
-/// @type Color | String [default]
-$inuit-btn-shadow                                   : 0 1px 0 rgba($black, .15) !default;
+.doc-header{
+  max-width: calculateRem(1200px);
+  
+}
 
-/// Small shadow
-/// @group px-buttons-design:variables:style
-/// @type Color | String [default]
-$inuit-btn-shadow--light                            : 0 1px 0 rgba($black, .1) !default;
+//.description-text
+.doc-description{
+  max-width: calculateRem(700px);
+}
 
-/// Button Height
-/// @group px-buttons-design:variables:style
-/// @type Height | String [default]
-$inuit-btn-height                                   : 2em !default;
+//.tabContainer
+.doc-tab-container {
+  height:auto;
+  background: var(--px-demo-interactive-background-color, $gray1);
+}
 
-/// Button line height for firefox
-/// @group px-buttons-design:variables:style
-/// @type Line Height | String [default]
-$inuit-btn-line-height--firefox                     : 1.8em !default;
+//.properties
+.doc-properties-container{
+  flex: 0 0 calculateRem(250px);
+  background: var(--px-demo-properties-background-color, $white);
+  border: 1px solid var(--px-demo-properties-border-color, $gray4);
+  overflow-x: hidden;
+  overflow-y: auto;
+  margin-right: calculateRem(20px);
+}
 
-/// Small Button Height
-/// @group px-buttons-design:variables:style
-/// @type Height | String [default]
-$inuit-btn-height--small                            : 1.6666666667em !default;
+//.demoContainer
+.doc-demo-code-container {
+  flex: 1 1 auto;
+  overflow: auto;
+}
 
-/// Button line height for firefox
-/// @group px-buttons-design:variables:style
-/// @type Line Height | String [default]
-$inuit-btn-line-height--small--firefox              : 1.4em !default;
+//.demo
+.doc-demo-container{
+  min-height: calculateRem(400px);
+  background: var(--px-demo-component-background-color, $white);
+  border: 1px solid var(--px-demo-properties-border-color, $gray4);
+  overflow: auto;
+}
 
-/// Primary font color
-/// @group px-buttons-design:variables:style
-/// @type Color [default]
-$inuit-btn-primary-color                            : $white !default;
+//childrenAssociated
+.doc-children-associated {
+  :first-of-type {
+    margin-right: calculateRem(50px);
+  }
+}
 
-/// Primary background color
-/// @group px-buttons-design:variables:style
-/// @type Color [default]
-$inuit-btn-primary-background                       : $primary-blue !default;
+//.componentHeader
+.doc-component-header {
+  border: 1px solid var(--px-demo-properties-border-color, $gray4);
+  border-bottom: 1px solid $gray4;
+  font-size: calculateRem(25px);
+}
 
-/// Primary hover background color
-/// @group px-buttons-design:variables:style
-/// @type Color - [default]
-$inuit-btn-primary-background--hover                : $primary-blue-hover !default;
+//TODO change to actionable text
+//.componentList
+.doc-component-list {
+  a {     
+    color: $primary-blue;
+  }
+  ul {
+    list-style-type: none;
+    list-style: none;
+    padding: 0;
+    margin-left: 0;
+  }
+}
 
-/// Primary pressed background color
-/// @group px-buttons-design:variables:style
-/// @type Color - [default]
-$inuit-btn-primary-background--pressed              : $primary-blue-pressed !default;
+//.apiContainer
+.doc-api-container {
+  margin: 0 auto;
+  background-color: var(--px-demo-api-background-color, $white);
+}
 
-/// Primary border color
-/// @group px-buttons-design:variables:style
-/// @type Color [default]
-$inuit-btn-primary-border-color                     : $primary-blue-pressed !default;
+//.api
+.doc-api-sub-container {
+  width:80%;
+  margin:0 auto;
+  max-width:calculateRem(1200px),
+}
 
-/// Tertiary font color
-/// @group px-buttons-design:variables:style
-/// @type Color [default]
-$inuit-btn-tertiary-color                           : $primary-blue !default;
+//.footer
+.doc-footer{
+  background-color: var(--px-footer-background-color, $gray7);
+}
 
-/// Tertiary background color
-/// @group px-buttons-design:variables:style
-/// @type Color [default]
-$inuit-btn-tertiary-background                      : $white !default;
+//.footer__container
+.doc-footer__container{
+  flex-basis: 90%;
+  color:  var(--px-footer-text-color, $gray4);
+  font-size: 12px;
+  align-items: center;
+  display: inline-flex;
+  justify-content: space-between;
+}
 
-/// Tertiary hover background color
-/// @group px-buttons-design:variables:style
-/// @type Color - [default]
-$inuit-btn-tertiary-background--hover               : $gray3 !default;
-
-/// Tertiary pressed background color
-/// @group px-buttons-design:variables:style
-/// @type Color - [default]
-$inuit-btn-tertiary-background--pressed             : $gray5 !default;
-
-/// Disabled font color
-/// @group px-buttons-design:variables:style
-/// @type Color [default]
-$inuit-btn-disabled-color                           : $gray4 !default;
-
-/// Disabled background color
-/// @group px-buttons-design:variables:style
-/// @type Color [default]
-$inuit-btn-disabled-background                      : $white !default;
-
-/// Disabled border color
-/// @group px-buttons-design:variables:style
-/// @type Color [default]
-$inuit-btn-disabled-border-color                    : $gray4 !default;
-
-/// Produce CSS for primary buttons?
-/// @group px-buttons-design:variables:flag
-/// @type Boolean [default]
-$inuit-enable-btn--primary                          : false !default;
-
-/// Produce CSS for tertiary buttons?
-/// @group px-buttons-design:variables:flag
-/// @type Boolean [default]
-$inuit-enable-btn--tertiary                         : false !default;
-
-/// Produce CSS for small buttons?
-/// @group px-buttons-design:variables:flag
-/// @type Boolean [default]
-$inuit-enable-btn--small                            : false !default;
-
-/// Produce CSS for large buttons?
-/// @group px-buttons-design:variables:flag
-/// @type Boolean [default]
-$inuit-enable-btn--large                            : false !default;
-
-/// Produce CSS for huge buttons?
-/// @group px-buttons-design:variables:flag
-/// @type Boolean [default]
-$inuit-enable-btn--huge                             : false !default;
-
-/// Produce CSS for full buttons?
-/// @group px-buttons-design:variables:flag
-/// @type Boolean [default]
-$inuit-enable-btn--full                             : false !default;
-
-/// Produce CSS for icon buttons?
-/// @group px-buttons-design:variables:flag
-/// @type Boolean [default]
-$inuit-enable-btn--icon                             : false !default;
-
-/// Produce CSS for bare buttons?
-/// @group px-buttons-design:variables:flag
-/// @type Boolean [default]
-$inuit-enable-btn--bare                             : false !default;
-
-/// Produce CSS for bare--primary buttons?
-/// @group px-buttons-design:variables:flag
-/// @type Boolean [default]
-$inuit-enable-btn--bare--primary                    : false !default;
-
-/// Produce CSS for disabled buttons?
-/// @group px-buttons-design:variables:flag
-/// @type Boolean [default]
-$inuit-enable-btn--disabled                         : false !default;
-
-/// Assume `box-sizing : border-box;`
-/// @group px-buttons-design:variables:style
-/// @type Boolean [default]
-$inuit-global-border-box                            : false !default;
-
-/// Default buttons
-.#{$inuit-btn-namespace}btn,
-%#{$inuit-btn-namespace}btn {
-  display: inline-block;
-  overflow: visible;
-  height: $inuit-btn-height;
-  margin: 0;
-  border: 1px solid var(--px-btn-border-color, $inuit-btn-border-color);
-  border-radius: 3px;
-  padding: 0 $inuit-btn-height/2;
-  box-shadow: var(--px-btn-shadow--light, $inuit-btn-shadow--light);
-  font: inherit;
-  line-height: calc(#{$inuit-btn-height} - 2px);
-  -webkit-font-smoothing: antialiased;
-  cursor: pointer;
-  text-align: center;
+//.footer__list--lnk
+.doc-footer__list--lnk{
+  color: var(--px-footer-text-color,$gray4);
   text-decoration: none;
-  text-transform: none;
-  white-space: nowrap;
-  background-color: var(--px-btn-background, $inuit-btn-background);
-  &,
+  cursor: pointer;
   &:link,
   &:visited,
-  &:hover,
-  &:active {
-    color: var(--px-btn-color, $inuit-btn-color);
+  &:active,
+  &:focus {
+    color: var(--px-footer-text-color,$gray4);
   }
-  &:hover {
-    border-color: var(--px-btn-border-color--hover, $inuit-btn-border-color--hover);
-    box-shadow: var(--px-btn-shadow, $inuit-btn-shadow);
-    background-color: var(--px-btn-background--hover, $inuit-btn-background--hover);
+  &:hover{
+    color: var(--px-footer-text-color--hover,$gray2);
   }
   &:active {
-    border-color: var(--px-btn-border-color--pressed, $inuit-btn-border-color--pressed);
-    box-shadow: none;
-    background-color: var(--px-btn-background--pressed, $inuit-btn-background--pressed);
-  }
-  &:active {
-    outline: none;
+    color: var(--px-footer-text-color--pressed,$grey4);
   }
 }
 
-/// Workaround for FF since it does not support calc().
-/// Other buttons appear ok with the height declaration, but non-button elements do not.
-@-moz-document url-prefix() {
-  .#{$inuit-btn-namespace}btn:not(button),
-  %#{$inuit-btn-namespace}btn:not(button) {
-      line-height:$inuit-btn-line-height--firefox;
-  }
+//.footer__img
+.doc-footer__img{
+  width: 150px;
 }
 
-/// All buttons
-button.#{$inuit-btn-namespace}btn {
-  -webkit-appearance: button;
-}
-
-/// Establish default space between adjacent buttons
-.#{$inuit-btn-namespace}btn + .#{$inuit-btn-namespace}btn {
-  margin-left: $inuit-base-spacing-unit--small;
-}
-
-/// Buttons with no styles (good a11y practice to use <button> for actions rather than <a>).
-@if ($inuit-enable-btn--bare == true) {
-  .#{$inuit-btn-namespace}btn--bare,
-  %#{$inuit-btn-namespace}btn--bare {
-    height: auto;
-    border: 0;
-    border-radius: 0;
-    padding: 0;
-    line-height: inherit;
-    font-size: calculateRem(18px);
-    width: calculateRem(34px);
-    height: calculateRem(34px);
-    box-shadow: none;
-    background: none;
-    outline:none;
-    &,
-    &:link,
-    &:visited,
-    &:hover,
-    &:active,
-    &:focus {
-      box-shadow: none;
-      background: none;
-      outline:none;
-    }
-    &,
-    &:link,
-    &:visited {
-      color: var(--px-btn-bare-color--visited, $gray8);
-    }
-    &:hover {
-      color: var(--px-btn-bare-color--hover, $primary-blue);
-    }
-    &:active,
-    &:focus {
-      color: var(--px-btn-bare-color--pressed, $primary-blue-pressed);
-    }
+@media screen  and (max-width: calculateRem(672px)){
+  //.mega-demo
+  .doc-demo-background {
+    flex-direction: column;
+  }
+  //.properties
+  .doc-properties-container{
+    margin-right: 0px;
+  }
+  //.footer__container
+  .doc-footer__container{
+    flex-direction: column;
+  }
+  //.footer__list
+  .doc-footer__list{
+    padding-top: $inuit-base-spacing-unit--small;
+    text-align: center;
   }
 }
-
-/// Button bare primary
-@if ($inuit-enable-btn--bare--primary == true) {
-  .#{$inuit-btn-namespace}btn--bare--primary,
-  %#{$inuit-btn-namespace}btn--bare--primary {
-      height: auto;
-      border: 0;
-      border-radius: 0;
-      padding: 0;
-      line-height: inherit;
-      font-size: calculateRem(18px);
-      width: calculateRem(34px);
-      height: calculateRem(34px);
-      box-shadow: none;
-      background: none;
-      outline:none;
-      &,
-      &:link,
-      &:visited,
-      &:hover,
-      &:active,
-      &:focus {
-        box-shadow: none;
-        background: none;
-        outline:none;
-      }
-      &,
-      &:link,
-      &:visited {
-        color: var(--px-btn-primary-bare-color--visited, $primary-blue);
-      }
-      &:hover {
-        color: var(--px-btn-primary-bare-color--hover, $primary-blue-hover);
-      }
-      &:active,
-      &:focus {
-        color: var(--px-btn-primary-bare-color--pressed, $primary-blue-pressed);
-      }
-  }
-}
-
-/// Primary buttons
-@if ($inuit-enable-btn--primary == true) {
-  .#{$inuit-btn-namespace}btn--primary,
-  %#{$inuit-btn-namespace}btn--primary {
-    border-color: var(--px-btn-primary-border-color, $inuit-btn-primary-border-color);
-    box-shadow: var(--px-btn-shadow, $inuit-btn-shadow);
-    background-color: var(--px-btn-primary-background, $inuit-btn-primary-background);
-    &,
-    &:link,
-    &:visited,
-    &:hover,
-    &:active {
-      color: var(--px-btn-primary-color, $inuit-btn-primary-color);
-    }
-    &:hover {
-      border-color: transparent;
-      background-color: var(--px-btn-primary-background--hover, $inuit-btn-primary-background--hover);
-    }
-    &:active {
-      border-color: transparent;
-      background-color: var(--px-btn-primary-background--pressed, $inuit-btn-primary-background--pressed);
-    }
-  }
-}
-
-/// Tertiary buttons
-@if ($inuit-enable-btn--tertiary == true) {
-  .#{$inuit-btn-namespace}btn--tertiary,
-  %#{$inuit-btn-namespace}btn--tertiary {
-    border-color: var(--px-btn-border-color, $inuit-btn-border-color);
-    box-shadow: none;
-    background-color: var(--px-btn-tertiary-background, $inuit-btn-tertiary-background);
-    &,
-    &:link,
-    &:visited,
-    &:hover,
-    &:active {
-      color: var(--px-btn-tertiary-color, $inuit-btn-tertiary-color);
-    }
-    &:hover {
-      border-color: var(--px-btn-border-color--hover, $inuit-btn-border-color--hover);
-      box-shadow: none;
-      background-color: var(--px-btn-tertiary-background--hover, $inuit-btn-tertiary-background--hover);
-    }
-    &:active {
-      border-color: var(--px-btn-border-color--pressed, $inuit-btn-border-color--pressed);
-      box-shadow: none;
-      background-color: var(--px-btn-tertiary-background--pressed, $inuit-btn-tertiary-background--pressed);
-    }
-  }
-}
-
-/// Disabled buttons
-@if ($inuit-enable-btn--disabled == true) {
-  .#{$inuit-btn-namespace}btn--disabled,
-  %#{$inuit-btn-namespace}btn--disabled,
-  .btn[disabled] {
-    &,
-    &:link,
-    &:visited,
-    &:hover,
-    &:active {
-      border-color: var(--px-btn-disabled-border-color, $inuit-btn-disabled-border-color);
-      box-shadow: none;
-      cursor: not-allowed;
-      background-color: var(--px-btn-disabled-background, $inuit-btn-disabled-background);
-      color: var(--px-btn-disabled-color, $inuit-btn-disabled-color);
-      pointer-events: none;
-    }
-  }
-}
-
-/// Small buttons
-@if ($inuit-enable-btn--small == true) {
-  .#{$inuit-btn-namespace}btn--small,
-  %#{$inuit-btn-namespace}btn--small {
-      height: $inuit-btn-height--small;
-      font-size: calculateRem(12px);
-      line-height: calc(#{$inuit-btn-height--small} - 2px);
-  }
-  /** Workaround for FF since it does not support calc().
-    * Other buttons appear ok with the height declaration, but non-button elements do not.
-  **/
-  @-moz-document url-prefix() {
-    .#{$inuit-btn-namespace}btn--small,
-    %#{$inuit-btn-namespace}btn--small {
-        line-height:$inuit-btn-line-height--small--firefox;
-    }
-  }
-}
-
-/// Large buttons
-@if ($inuit-enable-btn--large == true) {
-  .#{$inuit-btn-namespace}btn--large,
-  %#{$inuit-btn-namespace}btn--large {
-      font-size: $inuit-base-spacing-unit--large;
-  }
-}
-
-/// Huge buttons
-@if ($inuit-enable-btn--huge == true) {
-  .#{$inuit-btn-namespace}btn--huge,
-  %#{$inuit-btn-namespace}btn--huge {
-      font-size: $inuit-base-spacing-unit--huge;
-  }
-}
-
-/// Full-width buttons (for mobile, et al)
-@if ($inuit-enable-btn--full == true) {
-  .#{$inuit-btn-namespace}btn--full,
-  %#{$inuit-btn-namespace}btn--full {
-      width: 100%;
-      @if $inuit-global-border-box == false {
-          /**
-           * Remove paddings so that widths and paddings don’t conflict.
-           */
-          padding-right: 0;
-          padding-left:  0;
-      }
-  }
-}
-
-/// Round iconic buttons
-@if ($inuit-enable-btn--icon == true) {
-  .#{$inuit-btn-namespace}btn--icon,
-  %#{$inuit-btn-namespace}btn--icon {
-      width: $inuit-btn-height;
-      border-radius: 6.6666666667em;
-      padding: 1px 0 0 1px;
-  }
-  /** Workaround for FF since it does not support calc().
-  **/
-  @-moz-document url-prefix() {
-    .#{$inuit-btn-namespace}btn--icon,
-    %#{$inuit-btn-namespace}btn--icon {
-        line-height:$inuit-btn-line-height--firefox;
-    }
-  }
-}
+// Trumps
+$inuit-enable-margins : true;
+$inuit-enable-margins--tiny : true;
+$inuit-enable-margins--small : true;
+$inuit-enable-margins--large : true;
+$inuit-enable-margins--huge : true;
+$inuit-enable-paddings : true;
+$inuit-enable-paddings--tiny : true;
+$inuit-enable-paddings--small : true;
+$inuit-enable-paddings--large : true;
+$inuit-enable-paddings--huge : true;
+@import "px-spacing-design/_trumps.spacing.scss";
+@import "inuit-clearfix/_trumps.clearfix.scss";
+@import "px-spacing-responsive-design/_trumps.spacing-responsive.scss";
+@import "px-widths-responsive-design/_trumps.widths-responsive.scss";
