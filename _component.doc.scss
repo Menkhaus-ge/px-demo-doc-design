@@ -38,27 +38,33 @@ $inuit-enable-list-inline--delimited : true;
 @import "px-list-inline-design/_objects.list-inline.scss";
 
 // Component
+
+//.apiContainer
+.doc-background--default {
+  background-color: var(--px-demo-api-background-color, $white);
+} 
+
 //.mega-demo
-.doc-demo-background{
-  background: var(--px-demo-interactive-background-color, $gray1);
-  width: 100%;
+.doc-background--interactive{
+  background-color: var(--px-demo-interactive-background-color, $gray1);
 }
 
-.doc-header{
-  max-width: calculateRem(1200px);
-  
+//.footer
+.doc-background--footer{
+  background-color: var(--px-footer-background-color, $gray7);
+}
+
+.doc-u-pb\00002b\00002b\00002b{
+  padding-bottom: calculateRem(60px); 
 }
 
 //.description-text
-.doc-description{
+.doc-text-width--max{
   max-width: calculateRem(700px);
 }
 
 //.tabContainer
-.doc-tab-container {
-  height:auto;
-  background: var(--px-demo-interactive-background-color, $gray1);
-}
+//deleted
 
 //.properties
 .doc-properties-container{
@@ -71,13 +77,13 @@ $inuit-enable-list-inline--delimited : true;
 }
 
 //.demoContainer
-.doc-demo-code-container {
+.doc-component-code-container {
   flex: 1 1 auto;
   overflow: auto;
 }
 
 //.demo
-.doc-demo-container{
+.doc-component-container{
   min-height: calculateRem(400px);
   background: var(--px-demo-component-background-color, $white);
   border: 1px solid var(--px-demo-properties-border-color, $gray4);
@@ -85,49 +91,37 @@ $inuit-enable-list-inline--delimited : true;
 }
 
 //childrenAssociated
-.doc-children-associated {
+.doc-associated {
   :first-of-type {
     margin-right: calculateRem(50px);
   }
 }
 
 //.componentHeader
-.doc-component-header {
+.doc-associated-header {
   border: 1px solid var(--px-demo-properties-border-color, $gray4);
   border-bottom: 1px solid $gray4;
   font-size: calculateRem(25px);
 }
 
 //TODO change to actionable text
-//.componentList
-.doc-component-list {
-  a {     
-    color: $primary-blue;
-  }
-  ul {
-    list-style-type: none;
-    list-style: none;
-    padding: 0;
-    margin-left: 0;
-  }
-}
-
-//.apiContainer
-.doc-api-container {
-  margin: 0 auto;
-  background-color: var(--px-demo-api-background-color, $white);
-}
+//.componentList {
+//   a {     
+//     color: $primary-blue;
+//   }
+//   ul {
+//     list-style-type: none;
+//     list-style: none;
+//     padding: 0;
+//     margin-left: 0;
+//   }
+// }
 
 //.api
-.doc-api-sub-container {
+.doc-layout--center {
   width:80%;
   margin:0 auto;
-  max-width:calculateRem(1200px),
-}
-
-//.footer
-.doc-footer{
-  background-color: var(--px-footer-background-color, $gray7);
+  max-width:calculateRem(1200px);
 }
 
 //.footer__container
@@ -166,7 +160,7 @@ $inuit-enable-list-inline--delimited : true;
 
 @media screen  and (max-width: calculateRem(672px)){
   //.mega-demo
-  .doc-demo-background {
+  .doc-interactive-background {
     flex-direction: column;
   }
   //.properties
