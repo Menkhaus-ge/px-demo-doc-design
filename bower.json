@@ -1,18 +1,18 @@
 {
-  "name": "px-doc-design",
+  "name": "px-demo-doc-design",
   "version": "0.0.1",
   "authors": [
     "General Electric"
   ],
   "description": "One sass file for all of PX component demo pages",
-  "main": "_objects.doc.scss",
+  "main": "_component.demo-doc.scss",
   "keywords": [
     "px",
     "sass",
     "demo",
     "page"
   ],
-  "homepage": "https://github.com/Menkhaus-ge/px-doc-design",
+  "homepage": "https://github.com/Menkhaus-ge/px-demo-doc-design",
   "private": false,
   "ignore": [
     "**/.*",
@@ -24,12 +24,12 @@
   ],
   "dependencies": {
     "px-colors-design": "^0.3.0",
-    "px-defaults-design": "^1.0.2",
-    "px-iconography-design": "^0.3.7"
+    "px-defaults-design": "^1.0.2"
   },
   "devDependencies": {
     "px-sass-doc": "^0.3.0",
     "px-starter-kit-design": "^0.7.0",
-    "px-polymer-font-awesome": "^1.1.0"
+    "px-polymer-font-awesome": "^1.1.0",
+    "px-buttons-design": "^1.1.3"
   }
 }

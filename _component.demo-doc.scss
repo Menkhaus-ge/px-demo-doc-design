@@ -5,42 +5,11 @@
 /// @group px-doc-design
 ////
 
-
-//Settings
+@import "px-defaults-design/_settings.defaults.scss";
 @import "px-colors-design/_settings.colors.scss";
 
-// Generic
-@import "px-normalize-design/_generic.normalize.scss";
-@import "px-box-sizing-design/_generic.box-sizing.scss";
-@import "px-helpers-design/_generic.helpers.scss";
-
-// Base
-@import "px-flexbox-design/_base.flexbox.scss";
-@import "px-viewport-design/_base.viewport.scss";
-@import "px-typography-design/_base.typography.scss";
-@import "px-headings-design/_base.headings.scss";
-
-$inuit-enable-code--inline : true;
-@import "px-code-design/_base.code.scss";
-
-// Objects
-$actionable : true;
-@import "px-actionable-text-icons-design/_objects.actionable.scss";
-
-$inuit-enable-toggle--small : true;
-@import "px-toggle-design/_objects.toggle.scss";
-
-$inuit-enable-inline-fields : true;
-$inuit-enable-input--regular : true;
-@import "px-forms-design/_base.forms.scss";
-
-$inuit-enable-list-inline--delimited : true;
-@import "px-list-inline-design/_objects.list-inline.scss";
-
-// Component
-
 //.apiContainer
-.doc-background--default {
+.doc-background--api {
   background-color: var(--px-demo-api-background-color, $white);
 } 
 
@@ -70,7 +39,7 @@ $inuit-enable-list-inline--delimited : true;
 .doc-properties-container{
   flex: 0 0 calculateRem(250px);
   background: var(--px-demo-properties-background-color, $white);
-  border: 1px solid var(--px-demo-properties-border-color, $gray4);
+  border: 1px solid var(--px-demo-containers-border-color, $gray4);
   overflow-x: hidden;
   overflow-y: auto;
   margin-right: calculateRem(20px);
@@ -86,7 +55,7 @@ $inuit-enable-list-inline--delimited : true;
 .doc-component-container{
   min-height: calculateRem(400px);
   background: var(--px-demo-component-background-color, $white);
-  border: 1px solid var(--px-demo-properties-border-color, $gray4);
+  border: 1px solid var(--px-demo-containers-border-color, $gray4);
   overflow: auto;
 }
 
@@ -99,7 +68,7 @@ $inuit-enable-list-inline--delimited : true;
 
 //.componentHeader
 .doc-associated-header {
-  border: 1px solid var(--px-demo-properties-border-color, $gray4);
+  border: 1px solid var(--px-demo-containers-border-color, $gray4);
   border-bottom: 1px solid $gray4;
   font-size: calculateRem(25px);
 }
@@ -160,7 +129,7 @@ $inuit-enable-list-inline--delimited : true;
 
 @media screen  and (max-width: calculateRem(672px)){
   //.mega-demo
-  .doc-interactive-background {
+  .doc-background--interactive {
     flex-direction: column;
   }
   //.properties
@@ -177,18 +146,4 @@ $inuit-enable-list-inline--delimited : true;
     text-align: center;
   }
 }
-// Trumps
-$inuit-enable-margins : true;
-$inuit-enable-margins--tiny : true;
-$inuit-enable-margins--small : true;
-$inuit-enable-margins--large : true;
-$inuit-enable-margins--huge : true;
-$inuit-enable-paddings : true;
-$inuit-enable-paddings--tiny : true;
-$inuit-enable-paddings--small : true;
-$inuit-enable-paddings--large : true;
-$inuit-enable-paddings--huge : true;
-@import "px-spacing-design/_trumps.spacing.scss";
-@import "inuit-clearfix/_trumps.clearfix.scss";
-@import "px-spacing-responsive-design/_trumps.spacing-responsive.scss";
-@import "px-widths-responsive-design/_trumps.widths-responsive.scss";
+
