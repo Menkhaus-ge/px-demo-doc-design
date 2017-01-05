@@ -1,34 +1,34 @@
 
 ////
-/// PX-DOC-DESIGN
+/// PX-DEMO-DOC-DESIGN
 /// Defines styles for component documention pages.
-/// @group px-doc-design
+/// @group px-demo-doc-design
 ////
 
 @import "px-defaults-design/_settings.defaults.scss";
 @import "px-colors-design/_settings.colors.scss";
 
 //.apiContainer
-.doc-background--api {
+.demo-background--api {
   background-color: var(--px-demo-api-background-color, $white);
 } 
 
 //.mega-demo
-.doc-background--interactive{
+.demo-background--interactive{
   background-color: var(--px-demo-interactive-background-color, $gray1);
 }
 
 //.footer
-.doc-background--footer{
+.demo-background--footer{
   background-color: var(--px-footer-background-color, $gray7);
 }
 
-.doc-u-pb\00002b\00002b\00002b{
+.demo-u-pb\00002b\00002b\00002b{
   padding-bottom: calculateRem(60px); 
 }
 
 //.description-text
-.doc-text-width--max{
+.demo-text-width--max{
   max-width: calculateRem(700px);
 }
 
@@ -36,7 +36,7 @@
 //deleted
 
 //.properties
-.doc-properties-container{
+.demo-properties-container{
   flex: 0 0 calculateRem(250px);
   background: var(--px-demo-properties-background-color, $white);
   border: 1px solid var(--px-demo-containers-border-color, $gray4);
@@ -46,13 +46,13 @@
 }
 
 //.demoContainer
-.doc-component-code-container {
+.demo-component-code-container {
   flex: 1 1 auto;
   overflow: auto;
 }
 
 //.demo
-.doc-component-container{
+.demo-component-container{
   min-height: calculateRem(400px);
   background: var(--px-demo-component-background-color, $white);
   border: 1px solid var(--px-demo-containers-border-color, $gray4);
@@ -60,14 +60,14 @@
 }
 
 //childrenAssociated
-.doc-associated {
+.demo-associated {
   :first-of-type {
     margin-right: calculateRem(50px);
   }
 }
 
 //.componentHeader
-.doc-associated-header {
+.demo-associated-header {
   border: 1px solid var(--px-demo-containers-border-color, $gray4);
   border-bottom: 1px solid $gray4;
   font-size: calculateRem(25px);
@@ -87,14 +87,14 @@
 // }
 
 //.api
-.doc-layout--center {
+.demo-layout--center {
   width:80%;
   margin:0 auto;
   max-width:calculateRem(1200px);
 }
 
 //.footer__container
-.doc-footer__container{
+.demo-footer__container{
   flex-basis: 90%;
   color:  var(--px-footer-text-color, $gray4);
   font-size: 12px;
@@ -104,7 +104,7 @@
 }
 
 //.footer__list--lnk
-.doc-footer__list--lnk{
+.demo-footer__list--lnk{
   color: var(--px-footer-text-color,$gray4);
   text-decoration: none;
   cursor: pointer;
@@ -123,25 +123,25 @@
 }
 
 //.footer__img
-.doc-footer__img{
+.demo-footer__img{
   width: 150px;
 }
 
 @media screen  and (max-width: calculateRem(672px)){
   //.mega-demo
-  .doc-background--interactive {
+  .demo-background--interactive {
     flex-direction: column;
   }
   //.properties
-  .doc-properties-container{
+  .demo-properties-container{
     margin-right: 0px;
   }
   //.footer__container
-  .doc-footer__container{
+  .demo-footer__container{
     flex-direction: column;
   }
   //.footer__list
-  .doc-footer__list{
+  .demo-footer__list{
     padding-top: $inuit-base-spacing-unit--small;
     text-align: center;
   }
