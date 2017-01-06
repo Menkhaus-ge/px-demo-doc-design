@@ -1,4 +1,4 @@
-# Buttons
+# px-demo-doc-design
 
 The demo-doc module is the sass file we use to style our documentation demo pages seen on predix-ui.com(https://www.predix-ui.com/) 
 
