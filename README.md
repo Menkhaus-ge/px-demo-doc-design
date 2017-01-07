@@ -13,7 +13,7 @@ Predix UI's Buttons module depends on two other Px modules:
 
 Install this module and its dependencies using bower:
 
-    bower install --save px-demo-doc-design
+    bower install px-demo-doc-design --save-dev
 
 Once installed, `@import` into your project's Sass file in its Component layer:
 
