@@ -1,3 +1,7 @@
+v1.0.2
+==========================
+* added base color class
+
 v1.0.1
 ==========================
 * fixed border styling on demo-associated-header
