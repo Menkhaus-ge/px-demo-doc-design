@@ -32,9 +32,6 @@
   max-width: calculateRem(700px);
 }
 
-//.tabContainer
-//deleted
-
 //.properties
 .demo-properties-container{
   flex: 0 0 calculateRem(250px);
@@ -68,23 +65,9 @@
 
 //.componentHeader
 .demo-associated-header {
-  border: 1px solid var(--px-demo-containers-border-color, $gray4);
-  border-bottom: 1px solid $gray4;
+  border-bottom: 1px solid var(--px-demo-containers-border-color, $gray4);
   font-size: calculateRem(25px);
 }
-
-//TODO change to actionable text
-//.componentList {
-//   a {     
-//     color: $primary-blue;
-//   }
-//   ul {
-//     list-style-type: none;
-//     list-style: none;
-//     padding: 0;
-//     margin-left: 0;
-//   }
-// }
 
 //.api
 .demo-layout--center {
