@@ -1,18 +1,18 @@
 {
-  "name": "px-demo-doc-design",
+  "name": "px-demo-design",
   "version": "1.0.2",
   "authors": [
     "General Electric"
   ],
   "description": "One sass file for all of PX component demo pages",
-  "main": "_component.demo-doc.scss",
+  "main": "_component.demo.scss",
   "keywords": [
     "px",
     "sass",
     "demo",
     "page"
   ],
-  "homepage": "https://github.com/Menkhaus-ge/px-demo-doc-design",
+  "homepage": "https://github.com/Menkhaus-ge/px-demo-design",
   "private": false,
   "ignore": [
     "**/.*",

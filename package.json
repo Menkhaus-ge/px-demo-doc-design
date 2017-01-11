@@ -1,5 +1,5 @@
 {
-    "name": "px-demo-doc-design",
+    "name": "px-demo-design",
     "version": "1.0.2",
     "description": "One sass file for all of PX component demo pages",
     "private": false,
@@ -8,7 +8,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/Menkhaus-ge/px-demo-doc-design"
+        "url": "https://github.com/Menkhaus-ge/px-demo-design"
     },
     "author": "General Electric",
     "dependencies": {

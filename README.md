@@ -1,6 +1,6 @@
-# px-demo-doc-design
+# px-demo-design
 
-The demo-doc module is the sass file we use to style our documentation demo pages seen on predix-ui.com(https://www.predix-ui.com/) 
+The demo module is the sass file we use to style our documentation demo pages seen on predix-ui.com(https://www.predix-ui.com/) 
 
 ## Dependencies
 
@@ -13,11 +13,11 @@ Predix UI's Buttons module depends on two other Px modules:
 
 Install this module and its dependencies using bower:
 
-    bower install px-demo-doc-design --save-dev
+    bower install px-demo-design --save-dev
 
 Once installed, `@import` into your project's Sass file in its Component layer:
 
-    @import "px-demo-doc-design/_component.demo-doc.scss";
+    @import "px-demo-design/_component.demo.scss";
 
 ## CSS Variables
 
