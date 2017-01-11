@@ -1,3 +1,7 @@
+v1.0.3
+==========================
+* updated name from 'demo-doc' to 'demo'
+
 v1.0.2
 ==========================
 * added base color class
