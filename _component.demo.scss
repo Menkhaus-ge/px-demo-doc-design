@@ -36,6 +36,10 @@
   max-width: calculateRem(700px);
 }
 
+.demo-container-flex {  
+  display: flex;
+}
+
 //.properties
 .demo-properties-container{
   flex: 0 0 calculateRem(250px);
@@ -116,7 +120,7 @@
 
 @media screen  and (max-width: calculateRem(672px)){
   //.mega-demo
-  .demo-background--interactive {
+  .demo-container-flex {  
     flex-direction: column;
   }
   //.properties

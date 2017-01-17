@@ -1,3 +1,7 @@
+v1.0.5
+==========================
+* added demo-container-flex for mobile
+
 v1.0.4
 ==========================
 * updated to cool grays
