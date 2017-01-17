@@ -1,3 +1,7 @@
+v1.0.4
+==========================
+* updated to cool grays
+
 v1.0.3
 ==========================
 * updated name from 'demo-doc' to 'demo'
