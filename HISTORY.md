@@ -1,3 +1,7 @@
+v1.0.6
+==========================
+* made .demo-component-container overflow visible for datetime panels
+
 v1.0.5
 ==========================
 * added demo-container-flex for mobile
