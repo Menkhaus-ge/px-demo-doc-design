@@ -72,9 +72,9 @@
 }
 
 //.componentHeader
-.demo-associated-header {
+//.demo-associated-header
+.demo-border-bottom  {
   border-bottom: 1px solid var(--px-demo-containers-border-color, $gray4);
-  font-size: calculateRem(25px);
 }
 
 //.api

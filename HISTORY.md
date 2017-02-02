@@ -1,3 +1,7 @@
+v1.0.7
+==========================
+* updated .demo-associated-header > .demo-border-bottom
+
 v1.0.6
 ==========================
 * made .demo-component-container overflow visible for datetime panels
