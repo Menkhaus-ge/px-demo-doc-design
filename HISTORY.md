@@ -1,6 +1,6 @@
 v1.1.0
 ==========================
-* added .demo-over-visible and updated .demo-component-container
+* added .demo-overflow-visible and updated .demo-component-container
 
 v1.0.7
 ==========================
