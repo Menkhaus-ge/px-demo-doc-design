@@ -1,3 +1,7 @@
+v1.1.0
+==========================
+* added .demo-over-visible and updated .demo-component-container
+
 v1.0.7
 ==========================
 * updated .demo-associated-header > .demo-border-bottom

@@ -61,7 +61,6 @@
   min-height: calculateRem(400px);
   background: var(--px-demo-component-background-color, $white);
   border: 1px solid var(--px-demo-containers-border-color, $gray4);
-  overflow: visible;
 }
 
 //childrenAssociated
@@ -82,6 +81,10 @@
   width:80%;
   margin:0 auto;
   max-width:calculateRem(1200px);
+}
+
+.demo-over-visible{
+  overflow: visible; 
 }
 
 //.footer__container
