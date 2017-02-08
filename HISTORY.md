@@ -1,3 +1,7 @@
+v1.2.0
+==========================
+* added .demo-hr
+
 v1.1.0
 ==========================
 * added .demo-overflow-visible and updated .demo-component-container
