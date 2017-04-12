@@ -1,3 +1,7 @@
+v2.0.1
+==========================
+* shift grays for redesign
+
 v2.0.0
 ==========================
 * Major bump to pick up redesigned sub dependencies

@@ -6,7 +6,7 @@
 ////
 
 @import "px-defaults-design/_settings.defaults.scss";
-@import "px-colors-design/_settings.colors.scss"; 
+@import "px-colors-design/_settings.colors.scss";
 
 .demo-background--base{
   background-color: var(--px-demo-base-background-color, $white);
@@ -15,7 +15,7 @@
 //.apiContainer
 .demo-background--api {
   background-color: var(--px-demo-api-background-color, $white);
-} 
+}
 
 //.mega-demo
 .demo-background--interactive{
@@ -24,11 +24,11 @@
 
 //.footer
 .demo-background--footer{
-  background-color: var(--px-footer-background-color, $gray7);
+  background-color: var(--px-footer-background-color, $gray10);
 }
 
 .demo-u-pb\00002b\00002b\00002b{
-  padding-bottom: calculateRem(60px); 
+  padding-bottom: calculateRem(60px);
 }
 
 //.description-text
@@ -36,7 +36,7 @@
   max-width: calculateRem(700px);
 }
 
-.demo-container-flex {  
+.demo-container-flex {
   display: flex;
 }
 
@@ -90,7 +90,7 @@
 }
 
 .demo-overflow-visible{
-  overflow: visible; 
+  overflow: visible;
 }
 
 //.footer__container
@@ -112,13 +112,13 @@
   &:visited,
   &:active,
   &:focus {
-    color: var(--px-footer-text-color,$gray4);
+    color: var(--px-footer-text-color,$gray1);
   }
   &:hover{
     color: var(--px-footer-text-color--hover,$gray2);
   }
   &:active {
-    color: var(--px-footer-text-color--pressed,$grey4);
+    color: var(--px-footer-text-color--pressed,$gray4);
   }
 }
 
@@ -129,7 +129,7 @@
 
 @media screen  and (max-width: calculateRem(672px)){
   //.mega-demo
-  .demo-container-flex {  
+  .demo-container-flex {
     flex-direction: column;
   }
   //.properties
