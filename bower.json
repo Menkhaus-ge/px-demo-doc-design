@@ -23,12 +23,12 @@
     "OSS_Notice.pdf"
   ],
   "dependencies": {
-    "px-colors-design": "^1.0.1",
-    "px-defaults-design": "^1.0.2"
+    "px-colors-design": "^1.0.0",
+    "px-defaults-design": "^1.0.0"
   },
   "devDependencies": {
-    "px-sass-doc": "^1.0.1",
-    "px-starter-kit-design": "^1.0.1",
+    "px-sass-doc": "^1.0.0",
+    "px-starter-kit-design": "^1.0.0",
     "px-polymer-font-awesome": "^2.0.0",
     "px-buttons-design": "^2.0.0"
   }
