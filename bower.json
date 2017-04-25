@@ -15,6 +15,7 @@
   "homepage": "https://github.com/Menkhaus-ge/px-demo-design",
   "private": false,
   "ignore": [
+    "*.enc",
     "**/.*",
     "node_modules",
     "bower_components",
