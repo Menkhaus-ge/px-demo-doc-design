@@ -145,5 +145,44 @@
     padding-top: $inuit-base-spacing-unit--small;
     text-align: center;
   }
-}
 
+  .demo-color-set-title {
+    text-transform: uppercase;
+    color: $gray13;
+  }
+
+  .demo-color-info-container {
+    line-height: 30px;
+    height: 30px;
+    white-space: nowrap;
+    display: flex;
+  }
+
+  .demo-color-swatch-name {
+    width: 140px;
+    text-align: left;
+  }
+
+  .demo-color-swatch {
+    margin-right: 10px;
+    height: 30px;
+    padding-left: 8px;
+    flex: 1 0 auto;
+  }
+
+  .demo-color-swatch__text--light {
+    color: $white;
+  }
+
+  .demo-color-swatch__text--dark {
+    color: $black;
+  }
+
+  .demo-color-swatch--title-swatch {
+    text-transform: uppercase;
+  }
+
+  .demo-margin-huge {
+    margin-top: $inuit-base-spacing-unit*5;
+  }
+}
