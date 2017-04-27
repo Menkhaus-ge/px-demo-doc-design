@@ -8,21 +8,30 @@
 @import "px-defaults-design/_settings.defaults.scss";
 @import "px-colors-design/_settings.colors.scss";
 
+.demo-text--light {
+  color: $white;
+}
+
+.demo-text--dark {
+  color: $black;
+}
+
+.demo-text--gray {
+  color: var(--px-demo-text-gray-color, $gray13);
+}
+
 .demo-background--base{
   background-color: var(--px-demo-base-background-color, $white);
 }
 
-//.apiContainer
 .demo-background--api {
   background-color: var(--px-demo-api-background-color, $white);
 }
 
-//.mega-demo
 .demo-background--interactive{
   background-color: var(--px-demo-interactive-background-color, $gray1);
 }
 
-//.footer
 .demo-background--footer{
   background-color: var(--px-footer-background-color, $gray10);
 }
@@ -31,7 +40,10 @@
   padding-bottom: calculateRem(60px);
 }
 
-//.description-text
+.demo-margin-top-huge {
+  margin-top: $inuit-base-spacing-unit*5;
+}
+
 .demo-text-width--max{
   max-width: calculateRem(700px);
 }
@@ -40,7 +52,6 @@
   display: flex;
 }
 
-//.properties
 .demo-properties-container{
   flex: 0 0 calculateRem(250px);
   background: var(--px-demo-properties-background-color, $white);
@@ -50,13 +61,11 @@
   margin-right: calculateRem(20px);
 }
 
-//.demoContainer
 .demo-component-code-container {
   flex: 1 1 auto;
   overflow: auto;
 }
 
-//.demo
 .demo-component-container{
   min-height: calculateRem(400px);
   background: var(--px-demo-component-background-color, $white);
@@ -64,15 +73,12 @@
   overflow: auto;
 }
 
-//childrenAssociated
 .demo-associated {
   :first-of-type {
     margin-right: calculateRem(50px);
   }
 }
 
-//.componentHeader
-//.demo-associated-header
 .demo-border-bottom  {
   border-bottom: 1px solid var(--px-demo-containers-border-color, $gray4);
 }
@@ -82,7 +88,6 @@
   border-top: 1px solid var(--px-demo-containers-border-color, $gray4);
 }
 
-//.api
 .demo-layout--center {
   width:80%;
   margin:0 auto;
@@ -93,7 +98,6 @@
   overflow: visible;
 }
 
-//.footer__container
 .demo-footer__container{
   flex-basis: 90%;
   color:  var(--px-footer-text-color, $gray4);
@@ -103,7 +107,6 @@
   justify-content: space-between;
 }
 
-//.footer__list--lnk
 .demo-footer__list--lnk{
   color: var(--px-footer-text-color,$gray4);
   text-decoration: none;
@@ -122,67 +125,50 @@
   }
 }
 
-//.footer__img
 .demo-footer__img{
   width: 150px;
 }
 
 @media screen  and (max-width: calculateRem(672px)){
-  //.mega-demo
+
   .demo-container-flex {
     flex-direction: column;
   }
-  //.properties
+
   .demo-properties-container{
     margin-right: 0px;
   }
-  //.footer__container
+
   .demo-footer__container{
     flex-direction: column;
   }
-  //.footer__list
+
   .demo-footer__list{
     padding-top: $inuit-base-spacing-unit--small;
     text-align: center;
   }
+}
 
-  .demo-color-set-title {
-    text-transform: uppercase;
-    color: $gray13;
-  }
 
-  .demo-color-info-container {
-    line-height: 30px;
-    height: 30px;
-    white-space: nowrap;
-    display: flex;
-  }
+/*-------------------------
+Color design styles
+--------------------------*/
 
-  .demo-color-swatch-name {
-    width: 140px;
-    text-align: left;
-  }
+.demo-color-swatch {
+  margin-right: 10px;
+  height: 30px;
+  padding-left: 8px;
+  flex: 1 0 auto;
+}
 
-  .demo-color-swatch {
-    margin-right: 10px;
-    height: 30px;
-    padding-left: 8px;
-    flex: 1 0 auto;
-  }
+.demo-color-swatch-label {
+  width: 140px;
+  text-align: left;
+}
 
-  .demo-color-swatch__text--light {
-    color: $white;
-  }
-
-  .demo-color-swatch__text--dark {
-    color: $black;
-  }
-
-  .demo-color-swatch--title-swatch {
-    text-transform: uppercase;
-  }
-
-  .demo-margin-huge {
-    margin-top: $inuit-base-spacing-unit*5;
-  }
+.demo-color-swatch--container {
+  line-height: 30px;
+  height: 30px;
+  white-space: nowrap;
+  display: flex;
 }
