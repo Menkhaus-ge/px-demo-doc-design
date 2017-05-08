@@ -125,27 +125,6 @@
   width: 150px;
 }
 
-@media screen  and (max-width: calculateRem(672px)){
-
-  .demo-container-flex {
-    flex-direction: column;
-  }
-
-  .demo-properties-container{
-    margin-right: 0px;
-  }
-
-  .demo-footer__container{
-    flex-direction: column;
-  }
-
-  .demo-footer__list{
-    padding-top: $inuit-base-spacing-unit--small;
-    text-align: center;
-  }
-}
-
-
 /*-------------------------
 Color demo styles
 --------------------------*/
@@ -168,3 +147,42 @@ Color demo styles
   white-space: nowrap;
   display: flex;
 }
+
+/*-------------------------
+Shadow demo styles
+--------------------------*/
+.demo-shadow__box{
+  width: 40%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+/*-------------------------
+Style for screen smaller than 672px
+--------------------------*/
+@media screen  and (max-width: calculateRem(672px)){
+
+  .demo-container-flex {
+    flex-direction: column;
+  }
+
+  .demo-properties-container{
+    margin-right: 0px;
+  }
+
+  .demo-footer__container{
+    flex-direction: column;
+  }
+
+  .demo-footer__list{
+    padding-top: $inuit-base-spacing-unit--small;
+    text-align: center;
+  }
+  .demo-shadow__box{
+    width: 100%;
+  }
+}
+
+
+
