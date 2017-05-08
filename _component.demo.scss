@@ -53,7 +53,7 @@
 }
 
 .demo-properties-container{
-  flex: 0 0 calculateRem(250px);
+  flex: 0 0 auto;
   background: var(--px-demo-properties-background-color, $white);
   border: 1px solid var(--px-demo-containers-border-color, $gray4);
   overflow-x: hidden;
