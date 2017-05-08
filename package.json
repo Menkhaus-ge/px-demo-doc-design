@@ -1,6 +1,6 @@
 {
     "name": "px-demo-design",
-    "version": "2.0.1",
+    "version": "2.0.0",
     "description": "One sass file for all of PX component demo pages",
     "private": false,
     "scripts": {
