@@ -157,6 +157,9 @@ Shadow demo styles
   margin-top: 5px;
   margin-bottom: 5px;
 }
+.demo-shadow__box--background{
+  background: var(--px-demo-shadow__box--background, $white);
+}
 
 /*-------------------------
 Style for screen smaller than 672px
