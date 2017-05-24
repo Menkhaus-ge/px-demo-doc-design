@@ -54,6 +54,8 @@
 
 .demo-properties-container{
   flex: 0 0 auto;
+  width: 30%;
+  max-width: calculateRem(350px);
   background: var(--px-demo-properties-background-color, $white);
   border: 1px solid var(--px-demo-containers-border-color, $gray4);
   overflow-x: hidden;
@@ -172,7 +174,10 @@ Style for screen smaller than 672px
 
   .demo-properties-container{
     margin-right: 0px;
+    width: 100%;
+    max-width: 100%;
   }
+
 
   .demo-footer__container{
     flex-direction: column;

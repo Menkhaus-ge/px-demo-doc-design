@@ -58,7 +58,7 @@ gulp.task('sass', function() {
 });
 
 gulp.task('watch', function() {
-  gulp.watch(['*.scss'], ['sass']);
+  gulp.watch(['*.scss', 'sass/*.scss'], ['sass']);
 });
 
 gulp.task('serve', function() {
@@ -71,8 +71,9 @@ gulp.task('serve', function() {
     server: ['./', 'bower_components'],
   });
 
-  gulp.watch(['css/*.css', '*.html', '*.js']).on('change', browserSync.reload);
-  gulp.watch(['*.scss'], ['sass']);
+  gulp.watch(['css/*-styles.html', '*.html', '*.js', 'demo/*.html']).on('change', browserSync.reload);
+  gulp.watch(['*.scss', 'sass/*.scss'], ['sass']);
+
 });
 
 gulp.task('bump:patch', function(){
