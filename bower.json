@@ -12,7 +12,6 @@
     "demo",
     "page"
   ],
-  "homepage": "https://github.com/Menkhaus-ge/px-demo-design",
   "private": false,
   "ignore": [
     "*.enc",
@@ -24,14 +23,20 @@
     "OSS_Notice.pdf"
   ],
   "dependencies": {
-    "px-colors-design": "^1.0.0",
-    "px-defaults-design": "^2.0.0"
   },
   "devDependencies": {
+    "px-defaults-design": "^2.0.0",
+    "px-colors-design": "^1.0.0",
+    "px-normalize-design": "^1.0.0",
+    "px-box-sizing-design": "^1.0.0",
+    "px-helpers-design": "^1.0.0",
+    "px-flexbox-design": "^1.0.0",
+    "px-viewport-design": "^1.0.0",
+    "px-spacing-responsive-design": "^1.0.0",
+    "px-widths-responsive-design": "^1.0.0",
     "px-sass-doc": "^1.0.0",
-    "px-starter-kit-design": "^1.0.0",
-    "px-polymer-font-awesome": "^2.0.0",
-    "px-buttons-design": "^2.0.0"
+    "px-buttons-design": "^2.0.0",
+    "px-icon-set": "^2.0.0"
   },
   "resolutions": {
     "webcomponentsjs": "^0.7.24"
