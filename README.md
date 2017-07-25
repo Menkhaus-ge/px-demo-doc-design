@@ -1,13 +1,6 @@
 # px-demo-design
 
-The demo module is the sass file we use to style our documentation demo pages seen on predix-ui.com(https://www.predix-ui.com/) 
-
-## Dependencies
-
-Predix UI's Buttons module depends on two other Px modules:
-
-* [px-colors-design](https://github.com/PredixDev/px-colors-design)
-* [px-defaults-design](https://github.com/PredixDev/px-defaults-design)
+The Predix UI Demo module is the Sass file we use to style our documentation demo pages seen on predix-ui.com(https://www.predix-ui.com/) 
 
 ## Installation
 
@@ -21,7 +14,7 @@ Once installed, `@import` into your project's Sass file in its Component layer:
 
 ## CSS Variables
 
-These css variables are available:
+The following CSS variables are available for styling:
 
     --px-demo-api-background-color
     --px-demo-component-background-color
