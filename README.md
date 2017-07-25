@@ -1,6 +1,6 @@
 # px-demo-design
 
-The Predix UI Demo module is the Sass file we use to style our documentation demo pages seen on predix-ui.com(https://www.predix-ui.com/) 
+The Predix UI Demo module is the Sass file we use to style our documentation demo pages seen on [predix-ui.com](https://www.predix-ui.com/).
 
 ## Installation
 
