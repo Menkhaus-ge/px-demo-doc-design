@@ -31,10 +31,6 @@
   background-color: var(--px-demo-interactive-background-color, $gray1);
 }
 
-.demo-background--footer{
-  background-color: var(--px-footer-background-color, $gray10);
-}
-
 .demo-u-pb\00002b\00002b\00002b{
   padding-bottom: calculateRem(60px);
 }
@@ -93,31 +89,20 @@
   overflow: visible;
 }
 
+/*-------------------------
+Footer demo styles
+--------------------------*/
 .demo-footer__container{
   flex-basis: 90%;
-  color:  var(--px-footer-text-color, $gray4);
+  color:  var(--px-footer-text-color, $gray15);
   font-size: 12px;
   align-items: center;
   display: inline-flex;
   justify-content: space-between;
 }
 
-.demo-footer__list--lnk{
-  color: var(--px-footer-text-color,$gray4);
-  text-decoration: none;
-  cursor: pointer;
-  &:link,
-  &:visited,
-  &:active,
-  &:focus {
-    color: var(--px-footer-text-color,$gray1);
-  }
-  &:hover{
-    color: var(--px-footer-text-color--hover,$gray2);
-  }
-  &:active {
-    color: var(--px-footer-text-color--pressed,$gray4);
-  }
+.demo-background--footer{
+  background-color: var(--px-footer-background-color, $gray1);
 }
 
 .demo-footer__img{
