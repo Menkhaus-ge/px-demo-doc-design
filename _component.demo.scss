@@ -92,20 +92,25 @@
 /*-------------------------
 Footer demo styles
 --------------------------*/
-.demo-footer__container{
+.demo-footer__container {
   flex-basis: 90%;
-  color:  var(--px-footer-text-color, $gray15);
+  color:  var(--px-footer-text-color, $gray10);
   font-size: 12px;
   align-items: center;
   display: inline-flex;
   justify-content: space-between;
 }
 
-.demo-background--footer{
+.demo-background--footer {
   background-color: var(--px-footer-background-color, $gray1);
 }
 
-.demo-footer__img{
+:host {
+  --px-actionable-alt-text-color: var(--demo-footer-actionable-text-color, $gray10);
+  // --px-actionable-alt-text-color--hover: var(--demo-footer-actionable-text-color, red);
+}
+
+.demo-footer__img {
   width: 150px;
 }
 
