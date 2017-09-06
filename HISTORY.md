@@ -1,3 +1,7 @@
+v2.0.2
+==========================
+* added min-width for properties panel
+
 v2.0.1
 ==========================
 * Updated footer styles
