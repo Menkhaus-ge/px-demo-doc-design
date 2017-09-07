@@ -61,6 +61,7 @@
 }
 .demo-properties {
   position: absolute;
+  max-width: calculateRem(238px);
   padding-bottom: $inuit-base-spacing-unit--large;
 }
 
@@ -167,6 +168,7 @@ Style for screen smaller than 672px
   .demo-properties {
     position: static;
     padding-right: 0;
+    max-width: none;
   }
 
   .demo-footer__container {
