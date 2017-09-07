@@ -1,3 +1,7 @@
+v2.0.3
+==========================
+* updated styles for property panel to scroll
+
 v2.0.2
 ==========================
 * added min-width for properties panel
