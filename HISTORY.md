@@ -1,3 +1,7 @@
+v2.0.4
+==========================
+* updated properties panel to display full width
+
 v2.0.3
 ==========================
 * updated styles for property panel to scroll
