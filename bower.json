@@ -1,6 +1,6 @@
 {
   "name": "px-demo-design",
-  "version": "2.0.4",
+  "version": "2.0.5",
   "authors": [
     "General Electric"
   ],
@@ -22,8 +22,7 @@
     ".github",
     "OSS_Notice.pdf"
   ],
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "px-defaults-design": "^2.0.0",
     "px-colors-design": "^1.0.0",
@@ -34,11 +33,7 @@
     "px-viewport-design": "^1.0.0",
     "px-spacing-responsive-design": "^1.0.0",
     "px-widths-responsive-design": "^1.0.0",
-    "px-sass-doc": "^1.0.0",
     "px-buttons-design": "^2.0.0",
     "px-icon-set": "^2.0.0"
-  },
-  "resolutions": {
-    "webcomponentsjs": "^0.7.24"
   }
 }
