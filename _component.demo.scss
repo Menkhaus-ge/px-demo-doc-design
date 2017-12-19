@@ -66,6 +66,10 @@
   width: 100%;
 }
 
+.demo-component-code-container {
+  width: 100%;
+}
+
 .demo-component-container{
   min-height: calculateRem(400px);
   background: var(--px-demo-component-background-color, $white);
