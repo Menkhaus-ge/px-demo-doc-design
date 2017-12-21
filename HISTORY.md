@@ -1,3 +1,12 @@
+v2.0.6
+==========================
+* Add add explicit 100% width and min-width:0 to .demo-component-code-container
+  so it shrinks and does not overflow its parent width
+
+v2.0.5
+==========================
+* Removed unused demo code
+
 v2.0.4
 ==========================
 * updated properties panel to display full width
