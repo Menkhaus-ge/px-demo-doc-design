@@ -35,5 +35,6 @@
     "px-widths-responsive-design": "^1.0.0",
     "px-buttons-design": "^2.0.0",
     "px-icon-set": "^2.0.0"
-  }
+  },
+  "license": "BSD-3-Clause"
 }
