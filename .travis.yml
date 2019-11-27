@@ -2,9 +2,8 @@ sudo: false
 dist: trusty
 language: node_js
 node_js:
-- stable
+  - stable
 before_script:
-- npm install bower
-- export PATH=$PWD/node_modules/.bin:$PATH
-script:
-- bower install
+  - npm install
+  - 'export PATH=$PWD/node_modules/.bin:$PATH'
+
